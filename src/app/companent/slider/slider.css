@@ -1,0 +1,55 @@
+.slider-container {
+  position: relative;
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: hidden;
+ 
+  justify-content: center;
+  align-items: center;
+  background-color:transparent; /* Arkaplan rengi */
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.slider-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.slider-button:hover {
+  background-color: #45a049;
+}
+
+.slider-image {
+  width: 80%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  margin: 0 auto; /* Resmi ortalar */
+}
+
+.slider-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto; /* Resmi ortalar */
+}
+
+ 
