@@ -1,5 +1,5 @@
 body{
-    background-color: #FFFFF9;    
+    background-image: url('../../public/Fotoğraf-5-Güzelyurtda-Güne-Veda-1.jpg');  
 }
 .menu { position: fixed; top: 0; width: 100%; z-index: 1000; /* Menü'nün üstte kalmasını sağlar */ }
 

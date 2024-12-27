@@ -1,0 +1,52 @@
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Her sırada 3 kart */
+  gap: 20px; /* Kartlar arasındaki boşluk */
+  justify-content: center;
+  padding: 0 20px 100px; /* Yanlardan ve alttan boşluk */
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.figure {
+  margin: 0;
+  padding: 0;
+}
+
+.visual {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.figcaption {
+  padding: 16px;
+  font-size: 0.875rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+  .cardGrid {
+    grid-template-columns: repeat(2, 1fr); /* Daha küçük ekranlarda 2 kart */
+  }
+}
+
+@media (max-width: 480px) {
+  .cardGrid {
+    grid-template-columns: repeat(1, 1fr); /* Daha küçük ekranlarda 1 kart */
+  }
+}

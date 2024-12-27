@@ -10,6 +10,7 @@ function PreviousNextMethods() {
     "/hq720.jpg",
     "/image2.jpg",
     "/image3.jpg",
+    "/image3.jpg",
   ]);
 
   const next = () => {

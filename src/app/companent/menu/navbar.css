@@ -1,0 +1,133 @@
+/* Genel Ayarlar */
+* {
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  header {
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    
+  }
+  
+  .start-style {
+    background-color: #edebeb; 
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+  }
+  
+  .scroll-on {
+    background-color: #333; 
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Daha belirgin gölge */
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    transition: padding 0.3s ease-in-out;
+  }
+  
+  .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333; /* Koyu renk logo */
+    text-decoration: none;
+  }
+  
+  .scroll-on .navbar-brand {
+    color: #fff; /* Scroll yapıldığında logo beyaz olur */
+  }
+  
+  .navbar-toggler {
+    display: none; /* Mobil cihazlar için daha sonra aktif edilebilir */
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 20px; /* Menü elemanları arasındaki boşluk */
+  }
+  
+  .nav-link {
+    color: #333; 
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .scroll-on .nav-link {
+    color: #fff; /* Scroll sonrası linkler beyaz olur */
+  }
+  
+  .nav-link:hover {
+    background-color: #f0f0f0; 
+    color: #000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    transform: translateY(-2px);
+  }
+  
+  .scroll-on .nav-link:hover {
+    background-color: #555;
+    color: #fff;
+  }
+  
+  .navbar-toggler-icon {
+    width: 30px;
+    height: 3px;
+    background-color: #333; 
+    display: block;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .scroll-on .navbar-toggler-icon {
+    background-color: #fff; 
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar-toggler {
+      display: block; 
+      border: none;
+      background: none;
+    }
+  
+    .navbar-links {
+      display: none; 
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #333;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .navbar-links.active {
+      display: flex;
+    }
+  
+    .nav-link {
+      padding: 1rem;
+      color: #fff; 
+      border-bottom: 1px solid #444;
+    }
+  
+    .navbar-toggler-icon {
+      background-color: #fff; 
+    }
+  }
+  
